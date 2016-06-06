@@ -1,0 +1,18 @@
+2. Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+
+num1 = input("numero 1: ")
+print("O número informado foi: %s" %num1)
+
+
+
+3. Faça um Programa que peça dois números e imprima a soma.
+
+num1 = float(input("numero 1: ")) #Float - pode receber número com casas decimais quebradas. Por padrão os input veem como str.
+num2 = float(input("numero 2: "))
+
+soma = num1 + num2
+
+print("A soma do numero: ", num1, "+", num2, "=", soma)
+
+
+4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
