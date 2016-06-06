@@ -23,7 +23,7 @@ else:
 
 sexo = input("Sexo ? ")
 
-if sexo == "m" or sexo == "f":         #Neste caso há case sensitive (Maiuscula != minuscula)
+if sexo == "m" or sexo == "f":         # Neste caso há case sensitive (Maiuscula != minuscula)
     if sexo == "m":
         print("masculino")
     else:
