@@ -1,0 +1,33 @@
+1. Faça um Programa que peça dois números e imprima o maior deles.
+
+num1 = float(input("número 1: "))
+num2 = float(input("número 2: "))
+
+if num1 > num2:
+		print(num1)
+else:
+    print(num2)
+                
+
+2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+num1 = int(input("número: "))
+
+if num1 >= 0:
+		print("positivo")
+else:
+		print("negativo")
+		
+		
+3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.           
+
+sexo = input("Sexo ? ")
+
+if sexo == "m" or sexo == "f":         #Neste caso há case sensitive (Maiuscula != minuscula)
+    if sexo == "m":
+        print("masculino")
+    else:
+        print("feminino")
+else:
+    print("inválido")
+	
