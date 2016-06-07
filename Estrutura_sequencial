@@ -16,3 +16,22 @@ print("A soma do numero: ", num1, "+", num2, "=", soma)
 
 
 4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+
+num1 = float(input("numero 1:")) # Conversão para float pois notas utilizam valores quebrados
+num2 = float(input("numero 2:"))
+num3 = float(input("numero 3:"))
+num4 = float(input("numero 4:"))
+
+# A media é dada apartir da soma de todos os valores divididos pela quantidade.
+media = (num1 + num2 + num3 + num4)/4 
+
+print("A média das notas informadas é: %.2f" %media)
+
+
+5. Faça um Programa que converta metros para centímetros.
+
+num1 = float(input("Quantidade em metros: ")) # Conversão para float pois utilizam valores quebrados
+
+converter_cm = num1/0.010000
+
+print(converter_cm, "cm")
