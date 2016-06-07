@@ -35,3 +35,6 @@ num1 = float(input("Quantidade em metros: ")) # Conversão para float pois utili
 converter_cm = num1/0.010000
 
 print(converter_cm, "cm")
+
+
+6. Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
