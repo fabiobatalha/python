@@ -38,3 +38,31 @@ print(converter_cm, "cm")
 
 
 6. Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+
+pi = 3.141592
+
+raio = float(input("Digite o raio: "))
+print("A area é: %.3f" %(pi*(raio**2))
+
+
+7. Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+
+area = float(input("informe quanto mede o lado do quadrado: ")) #Area = lado * lado
+
+area = area * area
+
+print("A área do quadrado é: %s m² e seu dobro é: %s m²" %(area, (area*2)))
+
+8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+
+valor_hora = float(input("Quanto você ganha p/ hora: "))
+horas_trab = int(input("Horas trabalhadas no mês: "))
+
+calculo = horas_trab * valor_hora
+
+print("Por mês você ganha: R$ %s" %calculo)
+
+9. Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+C = (5 * (F-32) / 9).
+
+
