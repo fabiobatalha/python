@@ -4,43 +4,43 @@ num1 = float(input("número 1: "))
 num2 = float(input("número 2: "))
 
 if num1 > num2:
-	print(num1)
+    print(num1)
 else:
-  print(num2)
-                
+    print(num2)
+
 
 2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
 
 num1 = int(input("número: "))
 
 if num1 >= 0:
-		print("positivo")
+    print("positivo")
 else:
-		print("negativo")
-		
-		
+    print("negativo")
+
 3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.           
 
-sexo = input("Sexo ? ")
-
-if sexo == "m" or sexo == "f":         # Neste caso há case sensitive (Maiuscula != minuscula)
-    if sexo == "m":
-        print("masculino")
+# condig: utf-8
+while True:
+    sexo = raw_input(u"Sexo ? ").lower()
+    if sexo == u"m":
+        print(u"masculino")
+    elif sexo == u"f":
+        print(u"feminino")
     else:
-        print("feminino")
-else:
-    print("inválido")
-	
+        print(u"invalido, digitar M ou F")
+        continue
+    break	
 	
 4. Faça um Programa que verifique se uma letra digitada é vogal ou consoante. 
 
-letra = input("Digite uma letra: ") #Vogais a,e,i,o,u
-
-if letra == "a" or letra == "A" or letra == "e" or letra == "E" or letra == "i" or letra == "I" or letra == "o" or 
-                letra == "O" or letra == "u" or letra == "U":
-    print("Vogal ", letra)
+# condig: utf-8
+VOGAIS = ['a', 'e', 'i', 'o', 'u']
+letra = raw_input("Digite uma letra: ").lower()
+if letra in VOGAIS:
+    print("Vogal: %s" % letra)
 else:
-    print("Consoante ", letra)
+    print("Consoante: %s" % letra)
     
     
 5. Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
@@ -54,13 +54,22 @@ nota2 = float(input("Nota 2: "))
 media = (nota1 + nota2)/2
 
 if media == 10:
-	print("aprovado c/ distinção", media)
+    print("aprovado c/ distinção", media)
 elif media < 7:
-	print("reprovado", media)
+    print("reprovado", media)
 elif media >= 7:
-	print("aprovado", media)
-	
-	
+    print("aprovado", media)
+
 6. Faça um Programa que leia três números e mostre o maior deles.
 
-
+# condig: utf-8
+def get_number():
+    while True:
+        try:
+            num = input(u"Digite um numero: ")
+            return num
+        except NameError:
+            print("Numero invalido")
+            continue
+numbers = sorted([get_number(), get_number(), get_number()])
+print(u"O maior numero e: %s " % numbers[-1])
